@@ -11,6 +11,7 @@ public class TestDocSearch {
     URI rootPath = new URI("http://localhost/");
     assertEquals("There are 1391 total files to search.", h.handleRequest(rootPath));
 	}
+    
 	@Test 
 	public void testSearch() throws URISyntaxException, IOException {
     Handler h = new Handler("./technical/");
